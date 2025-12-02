@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swordrunners</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--voy a copiar este header con modificaciones en cada página-->
+    <header>
+      <section class="intro">
+        <h1>The Swordrunners</h1>
+        <p class="subtitle">El arte de entrar, coger y salir corriendo</p>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="stores.html">Tiendas</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="about">
+      <h2>Sobre el Club</h2>
+      <p>
+        <em
+          >"El hombre tiene dos manos, y ambas sirven para agarrar una
+          espada"</em
+        >
+        - Alguien muy sabio.
+      </p>
+      <p>
+        Hoy en día, muchas son las personas que han perdido su propósito, en un
+        mundo incierto y cada vez más digital. Hace ya un siglo de la Gran
+        Depresión, y coincidentalmente, la espada ha dejado de ser el amigo del
+        hombre todo este tiempo. Es cierto, antes ya eran caras. Pero ahora son
+        caras e inútiles. Por lo que hemos decidido improvisar...
+      </p>
+      <p>
+        ¡Bienvenido a
+        <strong><span style="color: red">Swordrunners</span></strong
+        >! Una comunidad exclusiva para aquellos que comparten nuestra pasión
+        por entrar en tiendas de espadas al azar, seleccionar la pieza perfecta
+        y salir corriendo antes de que nadie se dé cuenta. Somos un grupo de
+        entusiastas que valoramos la velocidad, la precisión y, sobre todo, la
+        adrenalina. ¿Eres joven? No te encerrarán en la cárcel. ¿En la adultez?
+        Si estás leyendo esto, no tienes nada que perder... ¿Tercera edad?
+        ¡Hazte con esa espada que deseabas toda la vida!
+      </p>
+      <p>
+        Nuestro club reúne a los mejores corredores de espadas en toda España y
+        algo más. Cada mes, celebramos las hazañas más arriesgadas y votamos al
+        miembro más valiente. ¿Tienes lo que se necesita para unirte a nosotros?
+      </p>
+    </section>
+
+    <section class="voting-section">
+      <h2>¡Swordrunner del Mes!</h2>
+      <p class="voting-intro">
+        Vota por el Swordrunner más impresionante. ¿Quién de nosotros te ha
+        cautivado más? Cada voto cuenta para determinar quién será el ganador
+        del mes. Votad hoy, y subid al podio el mes que viene.
+      </p>
+
+      <!--aquí hago trampa y meto un pequeño alert con js porque me parece feo que los botones no tengan acción-->
+
+      <div class="contestants-grid">
+        <div class="contestant-card">
+          <img
+            src="img/ichigo.jpg"
+            alt="Foto de perfil de Juan"
+            class="profile-photo"
+          />
+          <h3>Juan "El Veloz"</h3>
+          <p class="feat-description">
+            Hora punta en Plaza España. Juan entra a una tienda de figuritas
+            anime y da con su nuevo amor: ¡Una réplica de la Zampakutou de
+            Ichigo! La descuelga de su estante con la calma de una persona que
+            no tiene nada que perder, pasea hacia la puerta mientras sostiene la
+            espada en alto, y sale a todo correr ante la atónita mirada de las
+            señoras del súper de enfrente. Fue cazado cuatro minutos después por
+            la policía local.
+          </p>
+
+          <button
+            class="vote-btn"
+            type="button"
+            onclick="alert('Recibido, ¡máquina!.')"
+          >
+            Votar
+          </button>
+        </div>
+
+        <div class="contestant-card">
+          <img
+            src="img/firekeeper.jpg"
+            alt="Foto de perfil de María"
+            class="profile-photo"
+          />
+          <h3>María "La Sombra"</h3>
+          <p class="feat-description">
+            En pleno centro de Toledo, nuestra favorita del público entró a una
+            tienda de espadas, encontró una Zweihander que le susurró a primera
+            vista, y no sabemos si es por amor a la Europa medieval o al Dark
+            Souls, pero decidió huir con ella, citando textualmente a la autora:
+            <em
+              >"pensé que encajaría perfectamente a mi espalda, la falda
+              sujetaba de alguna forma los cuatro kilos del tesoro, y solo
+              sobresalía un poco de empuñadura por mi pelo, que parecía un moño
+              raro de metal"</em
+            >. Según su videoblog, consiguió pasear por la ciudad media hora con
+            ella, pero empezaba a pesar y decidió volver a dejarla en su sitio,
+            no sin una foto de la dependienta flipando.
+          </p>
+
+          <button
+            class="vote-btn"
+            type="button"
+            onclick="alert('Recibido, ¡fiera!.')"
+          >
+            Votar
+          </button>
+        </div>
+
+        <div class="contestant-card">
+          <img
+            src="img/dwayne.jpg"
+            alt="Foto de perfil de Carlos"
+            class="profile-photo"
+          />
+          <h3>Carlos "El Codicioso"</h3>
+          <p class="feat-description">
+            Se llevó una katana auténtica de una tienda de alta seguridad,
+            descrita como
+            <em
+              >"la más molona del lugar, en plan sin exagerar bro, mazo
+              guapa"</em
+            >. Y luego volvió a por otra. Y luego a por otra más. ¡Todo esto sin
+            esconder las que ya llevaba! La aventura terminó tras casi quince
+            minutos de entrar y salir de la tienda hasta ser detectado. Si gana,
+            nos contará cómo hacía para no pitar...
+          </p>
+
+          <button
+            class="vote-btn"
+            type="button"
+            onclick="alert('Recibido, ¡mastodonte!.')"
+          >
+            Votar
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Ningún derecho reservado. Si nos multan venderemos tus datos.</p>
+    </footer>
+  </body>
+</html>

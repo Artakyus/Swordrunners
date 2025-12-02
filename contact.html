@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swordrunners - Contacto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Casi todos los identificadores en inglés por seguir la norma, pero algunos son demasiado especiales para traducirlos-->
+    <header>
+      <section class="contact-intro">
+        <h1>Parte del barco, parte de la tripulación</h1>
+        <p class="subtitle">
+          ¿Tienes lo que se necesita para unirte a nosotros?
+        </p>
+      </section>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="stores.html">Tiendas</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-section">
+      <p class="intro-text">
+        Completa el siguiente formulario para solicitar tu ingreso a
+        <strong>Swordrunners</strong>(o contarnos tu última aventura sin
+        compromiso, tal vez abramos un blog). Revisaremos tu solicitud y te
+        contactaremos si cumples con nuestros estándares de velocidad, sigilo,
+        valentía, estupidez y tiempo libre.
+      </p>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre *</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Ej: Paca, el apodo ya te lo damos nosotros"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="paca@correo.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Teléfono</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{9,15}"
+            placeholder="123456789"
+          />
+          <small class="form-hint"
+            >Tal vez queramos grabar un vídeo hablando de tus hazañas</small
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="experience">Nivel de experiencia *</label>
+          <select id="experience" name="experience" required>
+            <option value="">Selecciona una opción</option>
+            <option value="principiante">Aprendiz (0-2 hazañas)</option>
+            <option value="intermedio">Soldado (3-10 hazañas)</option>
+            <option value="avanzado">Guerrero (11-25 hazañas)</option>
+            <option value="experto">Demonio del filo (26+ hazañas)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="hazaña">Describe tu hazaña más impresionante *</label>
+          <textarea
+            id="hazaña"
+            name="hazaña"
+            required
+            minlength="20"
+            rows="5"
+            placeholder="Cuéntanos sobre tu mejor momento: la tienda, la espada, la sensación, etc."
+          ></textarea>
+          <small class="form-hint">Mínimo 20 caracteres</small>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="condition" name="condition" required />
+            <span
+              >Acepto contar solo la verdad, exagerar muy poquito, y que si os
+              multan venderéis mis datos *</span
+            >
+          </label>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-btn" onclick="alert('Si tardamos en responder es porque estamos corriendo con espadas')">Enviar Solicitud</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <p>Ningún derecho reservado. Si nos multan venderemos tus datos.</p>
+    </footer>
+  </body>
+</html>

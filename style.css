@@ -1,0 +1,366 @@
+/* Panel básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro,
+.intro-stores,
+.contact-intro {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #555;
+}
+
+/* Navegación: creo que me he complicado demasiado */
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #bdbdbd;
+}
+
+/* Secciones */
+section {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+.about p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Sección de votación con tarjetas*/
+.voting-section {
+  margin-top: 30px;
+}
+
+.voting-intro {
+  margin-bottom: 25px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.contestants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.contestant-card {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contestant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* funciona aunque las fotos difieran de tamaño
+y las caras se han recortado bien por suerte */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #2c3e50;
+}
+
+.contestant-card h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.feat-description {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.vote-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.vote-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Sección de tiendas */
+.tiendas-section {
+  margin-top: 30px;
+}
+
+.intro-text {
+  margin-bottom: 25px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.tiendas-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tiendas-table th,
+.tiendas-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tiendas-table th {
+  background-color: #2c3e50;
+  color: white;
+  font-weight: bold;
+}
+
+.tiendas-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.tienda-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.difficulty {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.difficulty.easy {
+  background-color: #27ae60;
+  color: white;
+}
+
+.difficulty.medium {
+  background-color: #f39c12;
+  color: white;
+}
+
+.difficulty.hard {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.location-btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.location-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Formulario de contacto */
+.contact-section {
+  margin-top: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-hint {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #777;
+  font-style: italic;
+}
+
+.checkbox-group {
+  margin-top: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: normal;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin-top: 3px;
+}
+
+.submit-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #229954;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-style: italic;
+}
+
+/* Responsividad */
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contestants-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tiendas-table {
+    font-size: 0.9em;
+  }
+
+  .tiendas-table th,
+  .tiendas-table td {
+    padding: 10px;
+  }
+}
